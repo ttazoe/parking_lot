@@ -15,13 +15,13 @@ public class VehicleController {
     @Autowired
     VehicleService vehicleService;
 
-    @GetMapping("/vehicle")
-    public ResponseEntity<List<Vehicle>> getAllParkingSpots(){
+    @GetMapping("/vehicles")
+    public ResponseEntity<List<Vehicle>> getAllVehicle(){
         List<Vehicle> body = vehicleService.listVehicles();
         return new ResponseEntity<>(body, HttpStatus.OK);
     }
 
-    @GetMapping("/vehicle/{id}")
+    @GetMapping("/vehicles/{id}")
     public ResponseEntity<Vehicle> getOneVehicle(@PathVariable int id){
         Vehicle body = vehicleService.getOneVehicle(id);
         return new ResponseEntity<>(body, HttpStatus.OK);
