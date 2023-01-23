@@ -17,4 +17,6 @@ public class ParkingSpotService {
         ParkingSpot currentParkingSpot = parkingSpotRepository.getOne(id);
         return currentParkingSpot;
     }
+
+
 }

@@ -6,17 +6,11 @@ import lombok.Data;
 import lombok.Getter;
 
 @AllArgsConstructor
+@Data
 public class ParkingSpot {
     private int id;
     private boolean isFree;
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
+    private Vehicle vehicle;
 
     public boolean getIsFree() {
         return isFree;
@@ -29,4 +23,5 @@ public class ParkingSpot {
     public ParkingSpot(){
 
     }
+
 }
