@@ -5,29 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="15391a73-4a7a-4e19-adae-ffe1ed19222d" name="Changes" comment="# ==== Commit Messages ====&#10;&#10;# ==== Commit Messages(Template) ====&#10;# :emoji: #Issue番号 変更内容&#10;# 例) :+1: #438 コメント追加&#10;#       👍 #438 コメント追加&#10;# ==== Prefix ====&#10;# :fix: バグ修正&#10;# :hotfix: クリティカルなバグ修正&#10;# :add: 新規機能・新規ファイル追加&#10;# :feat: feature&#10;# :update: バグではない機能修正&#10;# :change: 仕様変更による機能修正&#10;# :docs: ドキュメントのみ修正&#10;# :disable: 無効化&#10;# :remove(delete): ファイル削除、コードの一部を取り除く&#10;# :rename: ファイル名の変更&#10;# :upgrade: バージョンアップ&#10;# :revert: 修正取り消し&#10;# :style: 空白、セミコロン、行、コーディングフォーマットなどの修正&#10;# :refactor(clean,improve): リファクタリング&#10;# :test: テスト追加や間違っていたテストの修正&#10;# :chore: ビルドツールやライブラリで自動生成されたものをコミットするとき&#10;&#10;# ==== Emojis ====&#10;# 🐛  :bug: バグ修正&#10;# 👍  :+1: 機能改善&#10;# ✨  :sparkles: 部分的な機能追加&#10;# 🎨  :art: デザイン変更のみ&#10;# 💢  :anger: コンフリクト&#10;# 🚧  :construction: WIP&#10;# 📝  :memo: 文言修正&#10;# ♻️  :recycle: リファクタリング&#10;# 🔥  :fire: 不要な機能・使われなくなった機能の削除&#10;# 💚  :green_heart: テストやCIの修正・改善&#10;# 👕  :shirt: Lintエラーの修正やコードスタイルの修正&#10;# 🚀  :rocket: パフォーマンス改善&#10;# 🆙  :up: 依存パッケージなどのアップデート&#10;# 👮  :cop: セキュリティ関連の改善&#10;# ⚙   :gear: config変更&#10;# 📚  :books: ドキュメント">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/SpectralSettings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/google-java-format.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/design/class.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ParkingLotApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ParkingSpot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ParkingSpotController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ParkingSpotDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/ParkingSpotService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ParkingSpotController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ParkingSpotController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ParkingSpotDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ParkingSpotRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ParkingSpotService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ParkingSpotService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

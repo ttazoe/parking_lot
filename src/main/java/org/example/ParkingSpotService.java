@@ -7,9 +7,14 @@ import java.util.List;
 @Service
 public class ParkingSpotService {
     @Autowired
-    private ParkingSpotDao parkingSpotDao;
+    private ParkingSpotRepository parkingSpotRepository;
 
     public List<ParkingSpot> listParkingSpots(){
-        return parkingSpotDao.findAll();
+        return parkingSpotRepository.findAll();
+    }
+
+    public ParkingSpot getOneParkingSpot(int id){
+        ParkingSpot currentParkingSpot = parkingSpotRepository.getOne(id);
+        return currentParkingSpot;
     }
 }
