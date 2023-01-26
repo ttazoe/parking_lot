@@ -27,5 +27,13 @@ public class ParkingSpotRepository {
         return jdbcTemplate.update(sql, new Object[] {parkingSpot.getIsFree(),parkingSpot.getVehicleId()});
     }
 
+    public int updateParkingSpotStatus(int id, ParkingSpot parkingSpot) {
+        ParkingSpot currentParkingSpot = getOne(id);
+        currentParkingSpot.setIsFree(parkingSpot.getIsFree());
+        currentParkingSpot.setVehicleId(parkingSpot.getVehicleId());
+        String sql = "UPDATE parking_spot SET is_free = ?, vehicle_id = ? where id = ?";
+        return jdbcTemplate.update(sql, new Object[] {currentParkingSpot.getIsFree(), currentParkingSpot.getVehicleId(), currentParkingSpot.getId()});
+    }
+
 
 }

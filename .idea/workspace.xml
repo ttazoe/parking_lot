@@ -9,9 +9,6 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ParkingSpotController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ParkingSpotController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ParkingSpotRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ParkingSpotRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/ParkingSpotService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/ParkingSpotService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Response.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/schema.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

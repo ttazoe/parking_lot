@@ -22,6 +22,9 @@ public class ParkingSpotService {
         return parkingSpotRepository.addParkingSpot(parkingSpot);
     }
 
+    public int updateParkingSpot(int id, ParkingSpot parkingSpot) {
+        return parkingSpotRepository.updateParkingSpotStatus(id, parkingSpot);
+    }
 
 
 }

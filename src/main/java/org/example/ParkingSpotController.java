@@ -22,6 +22,11 @@ public class ParkingSpotController {
         return parkingSpotService.addParkingSpot(parkingSpot);
     }
 
+    @PutMapping("/parking-spot/{id}")
+    public int updateParkingSpot(@PathVariable int id, @RequestBody ParkingSpot parkingSpot) {
+        return parkingSpotService.updateParkingSpot(id, parkingSpot);
+    }
+
     @GetMapping("/park")
     public ResponseEntity<List<ParkingSpot>> getAllParkingSpots(){
         List<ParkingSpot> body = parkingSpotService.listParkingSpots();
