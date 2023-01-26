@@ -23,7 +23,7 @@ public class ParkingSpotController {
     }
 
     @PutMapping("/parking-spot/{id}")
-    public int updateParkingSpot(@PathVariable int id, @RequestBody ParkingSpot parkingSpot) {
+    public ParkingSpot updateParkingSpot(@PathVariable int id, @RequestBody ParkingSpot parkingSpot) {
         return parkingSpotService.updateParkingSpot(id, parkingSpot);
     }
 

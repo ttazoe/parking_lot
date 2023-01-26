@@ -1,11 +1,13 @@
 package org.example;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.repository.CrudRepository;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Optional;
 
 @Repository
 public class ParkingSpotRepository {
@@ -27,12 +29,14 @@ public class ParkingSpotRepository {
         return jdbcTemplate.update(sql, new Object[] {parkingSpot.getIsFree(),parkingSpot.getVehicleId()});
     }
 
-    public int updateParkingSpotStatus(int id, ParkingSpot parkingSpot) {
+    //TODO : 2 回 DB を参照しているけれどこれ削減できないかな？
+    public ParkingSpot updateParkingSpotStatus(int id, ParkingSpot parkingSpot) {
         ParkingSpot currentParkingSpot = getOne(id);
         currentParkingSpot.setIsFree(parkingSpot.getIsFree());
         currentParkingSpot.setVehicleId(parkingSpot.getVehicleId());
         String sql = "UPDATE parking_spot SET is_free = ?, vehicle_id = ? where id = ?";
-        return jdbcTemplate.update(sql, new Object[] {currentParkingSpot.getIsFree(), currentParkingSpot.getVehicleId(), currentParkingSpot.getId()});
+        jdbcTemplate.update(sql, new Object[] {currentParkingSpot.getIsFree(), currentParkingSpot.getVehicleId(), currentParkingSpot.getId()});
+        return getOne(id);
     }
 
     public int deleteParkingSpot(int id) {
