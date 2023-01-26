@@ -21,4 +21,11 @@ public class ParkingSpotRepository {
         String sql = "select * from parking_spot where id = ?";
         return jdbcTemplate.queryForObject(sql, new BeanPropertyRowMapper<ParkingSpot>(ParkingSpot.class), new Object[] {id});
     }
+
+    public int addParkingSpot(ParkingSpot parkingSpot){
+        String sql = "INSERT INTO parking_spot (is_free, vehicle_id) " + "VALUES (?,?)";
+        return jdbcTemplate.update(sql, new Object[] {parkingSpot.getIsFree(),parkingSpot.getVehicleId()});
+    }
+
+
 }

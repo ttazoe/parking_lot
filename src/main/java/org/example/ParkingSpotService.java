@@ -18,5 +18,10 @@ public class ParkingSpotService {
         return currentParkingSpot;
     }
 
+    public int addParkingSpot(ParkingSpot parkingSpot){
+        return parkingSpotRepository.addParkingSpot(parkingSpot);
+    }
+
+
 
 }

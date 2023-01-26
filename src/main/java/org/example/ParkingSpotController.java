@@ -15,6 +15,13 @@ public class ParkingSpotController {
     @Autowired
     private VehicleService vehicleService;
 
+
+    @PostMapping("/parking-spot")
+    public int addParkingSpot(@RequestBody ParkingSpot parkingSpot){
+        parkingSpot.setId(0);
+        return parkingSpotService.addParkingSpot(parkingSpot);
+    }
+
     @GetMapping("/park")
     public ResponseEntity<List<ParkingSpot>> getAllParkingSpots(){
         List<ParkingSpot> body = parkingSpotService.listParkingSpots();
@@ -25,9 +32,7 @@ public class ParkingSpotController {
     @GetMapping("/park/{id}")
     public ResponseEntity<Response> getOneParkingSpot(@PathVariable int id){
         ParkingSpot body = parkingSpotService.getOneParkingSpot(id);
-        // TODO : body から vehicle_id を抽出して、車両情報を取得する。
         Vehicle vBody = vehicleService.getOneVehicle(body.getVehicleId());
-        // TODO : Parking spot と組み合わせて通知する。
         Response rBody = new Response(body.getId(), body.getIsFree(),vBody);
         return new ResponseEntity<>(rBody, HttpStatus.OK);
     }
