@@ -35,5 +35,10 @@ public class ParkingSpotRepository {
         return jdbcTemplate.update(sql, new Object[] {currentParkingSpot.getIsFree(), currentParkingSpot.getVehicleId(), currentParkingSpot.getId()});
     }
 
+    public int deleteParkingSpot(int id) {
+        String sql = "DELETE FROM parking_spot where id = ?";
+        return jdbcTemplate.update(sql, new Object[] {id});
+    }
+
 
 }

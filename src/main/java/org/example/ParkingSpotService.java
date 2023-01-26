@@ -26,5 +26,8 @@ public class ParkingSpotService {
         return parkingSpotRepository.updateParkingSpotStatus(id, parkingSpot);
     }
 
+    public int deleteParkingSpot(int id){
+        return parkingSpotRepository.deleteParkingSpot(id);
+    }
 
 }
