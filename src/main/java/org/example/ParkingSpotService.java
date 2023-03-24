@@ -15,6 +15,9 @@ public class ParkingSpotService {
 
     public ParkingSpot getOneParkingSpot(int id){
         ParkingSpot currentParkingSpot = parkingSpotRepository.getOne(id);
+        if (currentParkingSpot == null){
+            throw new ParkingSpotNotFoundException("Parking spot with id {" + id + "} not found");
+        }
         return currentParkingSpot;
     }
 
